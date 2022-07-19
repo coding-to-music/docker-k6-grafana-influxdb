@@ -91,20 +91,14 @@ You can get Docker Compose here if you don’t have it yet.
 
 Open a browser to http://localhost:3000/d/k6/k6-load-testing-results and you’ll have an incredibly clear view of your load test streaming across the page in real-time:
 
-image here
-
-![](https://github.com/coding-to-music/docker-k6-grafana-influxdb/blob/main/images/fTPa8w2jMmQNDdWW5PJ9HQ.png?raw=true)
-
 ![](https://github.com/coding-to-music/docker-k6-grafana-influxdb/blob/main/images/hKRVygFE-k5OPrk2he9MTQ.png?raw=true)
-
-![](https://github.com/coding-to-music/docker-k6-grafana-influxdb/blob/main/images/Z_kHlGlqD_bihPbAyp665Q.png?raw=true)
 
 A Grafana user interface in a browser showing the results of a load test being performed by K6.
 Modify the script to suit your own back end and you can be load testing your own services in moments!
 
 ## Breaking it Down
 
-image here
+![](https://github.com/coding-to-music/docker-k6-grafana-influxdb/blob/main/images/fTPa8w2jMmQNDdWW5PJ9HQ.png?raw=true)
 
 K6 is an awesome open-source load testing framework written in Go. It is highly efficient and capable of generating high loads with hundreds of concurrent connections.
 
@@ -124,7 +118,7 @@ Then you can run docker-compose to perform a K6 run on a load test script:
 docker-compose run k6 run /scripts/ewoks.js
 ```
 
-image here
+![](https://github.com/coding-to-music/docker-k6-grafana-influxdb/blob/main/images/Z_kHlGlqD_bihPbAyp665Q.png?raw=true)
 
 A command prompt shows the output from running K6 using docker compose.
 InfluxDB is a fast time-series database, also written in Go, which is supported by K6 as an output target for realtime monitoring of a test. Whilst K6 is running the load test, it will stream statistics about the run to InfluxDB.
