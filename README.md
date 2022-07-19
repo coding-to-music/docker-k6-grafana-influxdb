@@ -59,6 +59,12 @@ https://swapi.dev/
 
 If you're tinkering with the script, it is just a friendly open source API, be gentle!
 
+## example of DataDog monitoring using K6
+
+![](https://github.com/coding-to-music/docker-k6-grafana-influxdb/blob/main/images/k6-default-dashboard.png?raw=true)
+
+https://docs.datadoghq.com/integrations/k6/
+
 # Beautiful Load Testing With K6 and Docker Compose
 
 https://medium.com/swlh/beautiful-load-testing-with-k6-and-docker-compose-4454edb3a2e3
@@ -83,7 +89,11 @@ You can get started load testing with K6 and Grafana using this starter project:
 ```java
 git clone https://github.com/luketn/docker-k6-grafana-influxdb.git
 cd docker-k6-grafana-influxdb
-docker-compose up -d influxdb grafana
+# docker-compose up -d influxdb grafana
+
+docker-compose up influxdb grafana
+
+
 docker-compose run k6 run /scripts/ewoks.js
 ```
 
@@ -251,7 +261,10 @@ docker-compose run k6
 Once you have a shell you can use utilities like nslookup and curl to check out the local network:
 
 ```
-/ $ nslookup influxdb
+nslookup influxdb
+```
+
+```java
 Server:         127.0.0.11
 Address:        127.0.0.11:53
 Non-authoritative answer:
