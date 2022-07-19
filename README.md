@@ -93,7 +93,7 @@ Open a browser to http://localhost:3000/d/k6/k6-load-testing-results and you’l
 
 image here
 
-!()[https://github.com/coding-to-music/docker-k6-grafana-influxdb/blob/main/images/Z_kHlGlqD_bihPbAyp665Q.png?raw=true
+!()[https://github.com/coding-to-music/docker-k6-grafana-influxdb/blob/main/images/Z_kHlGlqD_bihPbAyp665Q.png?raw=true]
 
 A Grafana user interface in a browser showing the results of a load test being performed by K6.
 Modify the script to suit your own back end and you can be load testing your own services in moments!
