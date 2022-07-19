@@ -8,6 +8,12 @@ From / By Luke Thompson https://github.com/luketn
 
 https://github.com/luketn/docker-k6-grafana-influxdb
 
+https://medium.com/swlh/beautiful-load-testing-with-k6-and-docker-compose-4454edb3a2e3
+
+https://grafana.com/grafana/dashboards/2587
+
+https://swapi.dev/
+
 ## Environment variables:
 
 ```java
