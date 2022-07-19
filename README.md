@@ -93,8 +93,11 @@ cd docker-k6-grafana-influxdb
 
 docker-compose up influxdb grafana
 
-
 docker-compose run k6 run /scripts/ewoks.js
+
+docker-compose run k6 run /scripts/test2.js
+
+docker-compose run k6 run /scripts/test3.js
 ```
 
 You can get Docker Compose here if you don’t have it yet.
